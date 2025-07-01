@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  background-image: url(/img/Bez-názvu-1\ 1.svg);
+  background-size: cover;
+  color: #f0eff2;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  margin-right: 270px;
+  margin-left: 163px;
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.ul_nav {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  margin-right: 326px;
+}
+li {
+  padding-right: 31px;
+}
+.lang {
+  margin-top: 31px;
+  margin-right: 171px;
+}
+/*=========*/
+
+.main {
+  margin-top: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 96px;
+  font-weight: 900;
+}
+.subtitle {
+  display: flex;
+  margin-bottom: 52px;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 900;
+}
+/* ----- */
+.postmain {
+  display: flex;
+  margin-bottom: 90px;
+  justify-content: center;
+  flex-direction: row;
+}
+.text_title {
+  display: flex;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.text_block {
+  width: 368px;
+  margin-left: 36px;
+}
+/* ------ */
+.lower_block {
+  display: flex;
+  flex-direction: column;
+}
+.titleRG {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+  font-size: 48px;
+  font-weight: 700;
+}
+.games {
+  margin-left: 12px;
+  color: #440c75;
+}
+.text_lower_block {
+  display: flex;
+  justify-content: center;
+  max-width: 836px;
+  margin: auto;
+  text-align: center;
+}
+/* ------------ */
+.tournament_announce {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 44px;
+}
+.game_title_announce {
+  margin-top: 54px;
+  font-size: 64px;
+  font-weight: 700;
+}
+.tournament_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21px;
+}
+.tournament_info {
+  display: flex;
+  list-style: none;
+}
+.tournament_table {
+  font-size: 20;
+  font-weight: 700;
+  list-style: none;
+}
+.tournament_table li {
+  margin-bottom: 19px;
+}
+.button {
+  margin-left: 0px;
+  display: flex;
+  justify-content: left;
+  margin-top: 28px;
+  width: 233px;
+  height: 56px;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+  margin-bottom: 18px;
+}
+.x {
+  margin-left: 46.4px;
+  margin-right: 46.4px;
+}
+.rights {
+  margin: auto;
+  margin-bottom: 41px;
+  display: flex;
+  justify-content: center;
+  font-size: 13;
+  font-weight: 700;
+  width: 994px;
+  text-align: center;
+  color: rgb(158, 145, 173);
+}

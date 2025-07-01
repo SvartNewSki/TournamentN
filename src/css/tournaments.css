@@ -1,0 +1,54 @@
+.title_text {
+  display: flex;
+  margin: auto;
+  margin-top: 92px;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.title_text span {
+  margin-left: 12px;
+  color: #440c75;
+}
+.title_subtext {
+  display: flex;
+  margin: auto;
+  margin-top: 6px;
+  max-width: 836px;
+  text-align: center;
+}
+.rectangle {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+.pyg-block {
+  position: absolute;
+}
+.title {
+  display: flex;
+  width: 402px;
+  margin: auto;
+  margin-top: 34px;
+  padding: auto;
+  font-size: 48px;
+  font-weight: 700;
+}
+.subtitle {
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 40%;
+}
+.game_pics {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  top: 421px;
+}
+.game {
+  max-width: 246px;
+  max-height: 394px;
+  margin-left: 43px;
+}
