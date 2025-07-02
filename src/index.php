@@ -7,4 +7,6 @@ require_once __DIR__ . "/config/app.php";
 
 
 $view = new BaseView();
-echo $view->render();
+// $view->layout = 'tournaments';
+$view->render();
+
