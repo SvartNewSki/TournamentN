@@ -7,7 +7,6 @@
   <title>Document</title>
 </head>
 <body>
-<?php require_once "/ospanel/domains/Tournaments/blocks/header.php"; ?>
 </body>
 </html>
 <form method="post" action="/lib/reg.php">
@@ -28,4 +27,3 @@
   <input type="password" name="password" class="one-line" />
   <button type="submit">Зарегистрироваться</button>
 </form>
-<?php require_once '/ospanel/domains/Tournaments/blocks/footer.php'; ?>

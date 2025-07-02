@@ -8,7 +8,6 @@
     <title>Document</title>
   </head>
   <body>
-  <?php require_once "/ospanel/domains/Tournaments/blocks/header.php"; ?>
     <div class="title_text"> RELEASED <span class="text_color"> TOURNAMENTS </span></div>
     <div class="title_subtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus, ut aut <br>
         reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</div>
@@ -25,7 +24,6 @@
           <img src="/img/csgo.png" alt="CSGO" class="game">
         </div>
     </div>
-    <?php require_once '/ospanel/domains/Tournaments/blocks/footer.php'; ?>
     </div>
   </body>
 </html>

@@ -8,7 +8,6 @@
     <title>Личный кабинет</title>
   </head>
   <body>
-  <?php require_once "/ospanel/domains/Tournaments/blocks/header.php"; ?>
   
     <div class="title_text"> 
         <p>Кабинет <span class="text_color"> Пользователя </span> <?=$_COOKIE ['login']; ?></p>
@@ -18,6 +17,5 @@
       </div>
       
     </div>
-    <?php require_once '/ospanel/domains/Tournaments/blocks/footer.php'; ?>
   </body>
 </html>
