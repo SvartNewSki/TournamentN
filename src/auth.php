@@ -9,7 +9,6 @@
     <title>Admin Panel</title>
 </head>
 <body>
-<?php require_once "/ospanel/domains/Tournaments/blocks/header.php"; ?>
     <div class="center_back">
     <form method="post" action="/lib/auth.php" class="auth_block">
         <div class="content">
@@ -31,5 +30,4 @@
         </div>
     </div>
 </body>
-<?php require_once '/ospanel/domains/Tournaments/blocks/footer.php'; ?>
 </html>
