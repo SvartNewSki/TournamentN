@@ -6,7 +6,7 @@
         <li><a href="/Tournaments.php">Tournament</a></li>
         <?php
             if(isset($_COOKIE['login'])) { ?>
-                <li><a href="/user.php">Кабинет пользователя</a></li>
+                <li><a href="PAGES_PATH">Кабинет пользователя</a></li>
                 <li><a href="/lib/exit.php">Выйти</a></li>
                 <?php }
             else{ ?>
