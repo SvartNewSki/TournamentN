@@ -5,21 +5,22 @@ namespace core\models;
 
 class BaseView
 {
-    public string $layout = 'main';
-    public string $footer = 'footer';
-    public string $header = 'header';
-    public function render()
+    public static string $footer = 'footer';
+    public static string $header = 'header';
+    public static function render(string $layout, array $data = [])
     {
-       $fileLayout = LAYOUT_PATH . $this->layout . ".php";
-       $layoutContent = file_get_contents($fileLayout);
-
-       $fileFooter = BLOCKS_PATH . $this->footer . ".php";
-       $footerContent = file_get_contents($fileFooter);
+        extract($data, EXTR_SKIP);
+        ob_start();
+        $fileHeader = COMPONENTS_PATH . self::$header . ".php";
+       require $fileHeader;
        
-       $fileHeader = BLOCKS_PATH . $this->header . ".php";
-       $headerContent = file_get_contents($fileHeader);
+       $fileLayout = LAYOUT_PATH . $layout . ".php";
+       require $fileLayout;
 
-       echo $headerContent . $layoutContent . $footerContent;
+       $fileFooter = COMPONENTS_PATH . self::$footer . ".php";
+       require $fileFooter;
+       
+       echo ob_get_clean();
 
     }
 }
