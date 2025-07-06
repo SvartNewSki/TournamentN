@@ -1,23 +1,23 @@
 <?php
 
 use core\models\BaseView;
+use core\controllers\app;
+use core\controllers\Route\Route;
+use core\Router\Router;
 
 require_once __DIR__ . "/vendor/autoload.php";
 require_once __DIR__ . "/config/app.php";
 
+// require_once __DIR__ . "/routes/web.php";
 
+// $view = new BaseView();
 
-$view = new BaseView();
-// $view->layout = 'tournaments';
-$view->render();
+// $view->render();
 
+// $uri = $_SERVER['REQUEST_URI'];
 
-$uri = $_SERVER['REQUEST_URI'];
+// App::run();
 
-if ($uri === '/') {
-    require 'views/layouts/main.php';
-} elseif ($uri === '/about') {
-    require 'views/layouts/Tournaments.php';
-} else {
-    require 'pages/404.php';
-}
+$router = new Router();
+require_once __DIR__ . '/routes/web.php';
+$router->dispatch($_SERVER["REQUEST_METHOD"],$_SERVER["REQUEST_URI"]);
