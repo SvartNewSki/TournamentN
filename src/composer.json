@@ -4,7 +4,9 @@
       "app\\": "",
       "app\\models\\": "models/",
       "core\\": "core/",
-      "core\\models\\": "core/models/"
+      "core\\router\\": "core/Router/",
+      "core\\models\\": "core/models/",
+      "core\\controllers\\": "core/controllers"
     }
   },
   "require": {
