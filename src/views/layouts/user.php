@@ -10,7 +10,7 @@
   <body>
   
     <div class="title_text"> 
-        <p>Кабинет <span class="text_color"> Пользователя </span> <?=$_COOKIE ['login']; ?></p>
+        <p>Кабинет <span class="text_color"> Пользователя </span> <?=$username ?></p>
     </div>
     </div>
     </div>
