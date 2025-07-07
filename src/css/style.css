@@ -4,6 +4,10 @@
   padding: 0;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   width: 100%;
@@ -27,24 +31,27 @@ a {
   flex-direction: row;
 }
 .logo {
-  margin-right: 270px;
-  margin-left: 163px;
+  margin-right: 2.5em;
+  margin-left: 10.68em;
   margin-top: 20px;
-  font-size: 32px;
-  font-weight: 700;
 }
 .ul_nav {
-  margin: 0;
+  font-size: 2em;
   display: flex;
   list-style: none;
-  margin-right: 326px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 1vw;
 }
 li {
   padding-right: 31px;
 }
 .lang {
-  margin-top: 31px;
-  margin-right: 171px;
+  font-size: 2em;
+  margin-top: 2rem;
+  margin-right: 10.68rem;
+  margin-left: 2.5em;
+  padding-top: 1vw;
 }
 /*=========*/
 
@@ -99,7 +106,7 @@ li {
 }
 .games {
   margin-left: 12px;
-  color: #440c75;
+  color: #ffd700;
 }
 .text_lower_block {
   display: flex;
@@ -155,14 +162,78 @@ li {
   margin-left: 46.4px;
   margin-right: 46.4px;
 }
+.footer {
+  margin-top: auto;
+}
 .rights {
   margin: auto;
   margin-bottom: 41px;
-  display: flex;
-  justify-content: center;
-  font-size: 13;
+  font-size: 1.1em;
   font-weight: 700;
-  width: 994px;
+  width: 90vw;
   text-align: center;
   color: rgb(158, 145, 173);
+}
+
+.slider {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #717171;
 }

@@ -1,14 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
   font-family: "Outfit", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   width: 100%;
-  height: 100%;
   background-image: url(/img/Bez-názvu-1\ 1.svg);
   background-size: cover;
+  color: #f0eff2;
   justify-content: center;
-  color: white;
-  font-size: 20px;
 }
 a:link {
   text-decoration: none;
@@ -19,18 +25,18 @@ a:link {
   background-color: rgba(0, 0, 0, 0.4);
   justify-content: center;
   margin: auto;
-  margin-top: 4%;
-  height: 20%;
-  border-radius: 15%;
-  width: 50%;
+  margin-top: 4vw;
+  height: 20vw;
+  border-radius: 25%;
+  width: 20vw;
+  border: solid purple;
 }
 .content {
-  flex: auto;
+  /* flex: auto; */
   justify-content: center;
-  margin: auto;
   margin-top: 10%;
   margin-bottom: 5%;
-  width: 50%;
+  width: 100%;
 }
 .title_auth {
   display: flex;
@@ -55,13 +61,18 @@ input {
   color: white;
   border-bottom: solid rgb(80, 15, 135);
 }
-.questions {
-  flex: auto;
+.auth_block {
   justify-content: center;
+  min-height: max-content;
+  border: solid red;
+}
 
+.questions {
+  border: solid blue;
+  justify-content: center;
   text-align: center;
   margin-bottom: 5%;
-  max-width: fit-content;
+  max-width: max-content;
 }
 .forgot {
   margin-left: 20px;
@@ -70,11 +81,11 @@ input {
   flex: auto;
   justify-content: center;
   margin: auto;
+  font-size: 1.5rem;
   margin-top: 20px;
   background-color: rgb(80, 15, 135);
-  padding: 5% 40%;
+  padding: 0.8rem 5rem;
   border-radius: 5px;
-  border-color: none;
 }
 button:hover {
   box-shadow: 0 0 1px #6633ff;
@@ -91,9 +102,3 @@ button:hover {
   text-align: center;
   color: rgb(158, 145, 173);
 }
-/* .auth_block {
-  flex: auto;
-  margin: auto;
-  justify-content: center;
-  max-width: 45%;
-} */
