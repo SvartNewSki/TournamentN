@@ -4,44 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+        
     <title>Document</title>
   </head>
   <body>
     <div class="main">
       <div class="title">WEBSITE NAME</div>
       <div class="subtitle">Lorem Ipsum Text</div>
-      <div class="postmain">
-        <img src="/img/Mask group.svg" alt="" />
-        <div class="text">
-          <div class="text_block">
-            <div class="text_title">
-              Lorem Ipsum <br />
-              FGF Playoff
+        <div class="titleInfo">
+          <div class="postmain">
+            <div class="carousel-images">
+              <img  src="/img/witcher.jpg" alt="" >
+              <img  src="/img/sus.jpg" alt="">
+              <img  src="/img/cs2.png" alt="">
+            
             </div>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis
-            pulvinar. Donec ipsum massa, ullamcorper in, auctor et, scelerisque
-            sed, est. Nulla accumsan, elit sit amet varius semper, nulla mauris
-            mollis quam, tempor suscipit diam nulla vel leo. Vivamus luctus
-            egestas leo. Nullam sit amet magna in magna gravida vehicula. In
-            enim a arcu imperdiet malesuada. Sed elit dui, pellentesque a,
-            faucibus vel, interdum nec, diam. In rutrum. Sed ac dolor sit amet
-            purus malesuada congue
+              <button class="carousel-btn prev-btn">&lt;</button>
+              <button class="carousel-btn next-btn">&gt;</button>
+            
           </div>
-          <div class="text_block">
-            <div class="text_title">
-              Lorem Ipsum <br />
-              FGF Playoff
-            </div>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis
-            pulvinar. Donec ipsum massa, ullamcorper in, auctor et, scelerisque
-            sed, est. Nulla accumsan, elit sit amet varius semper, nulla mauris
-            mollis quam, tempor suscipit diam nulla vel leo. Vivamus luctus
-            egestas leo. Nullam sit amet magna in magna gravida vehicula. In
-            enim a arcu imperdiet malesuada. Sed elit dui, pellentesque a,
-            faucibus vel, interdum nec, diam. In rutrum. Sed ac dolor sit amet
-            purus malesuada congue.
+          <div class="timer">
+            <img src="/img/clock.jpg" alt="">
           </div>
-        </div>
       </div>
       <div class="lower_block">
         <div class="titleRG">RELEASED <span class="games"> GAMES</span></div>
@@ -71,5 +55,7 @@
         </div>
       </div>
     </div>
+  <script src="/js/script.js"></script>
   </body>
+  
 </html>
