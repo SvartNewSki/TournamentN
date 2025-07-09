@@ -10,8 +10,8 @@ require_once __DIR__ . "/vendor/autoload.php";
 require_once __DIR__ . "/config/app.php";
 
 $db = Db::getInstance();
-$q = "Select * from tournament.user";
-$res = $db->conn->executeQuery($q)->fetchAllAssociative();
+$q = "SELECT * from tournament.news WHERE title = :name ";
+$res = $db->queryAssociative($q, ["name" => "Test"]);
 var_dump($res);
 
 
