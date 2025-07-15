@@ -84,3 +84,7 @@ input {
   padding-right: 1em;
   justify-items: auto;
 }
+.error {
+  color: red;
+  align-self: center;
+}

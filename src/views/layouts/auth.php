@@ -20,6 +20,9 @@
     <div class="btnBack">
         <button type="submit" class="btn">Sign in</button>
     </div>
+    <?php if(isset($_GET["error"])): ?>
+        <div class="error">Wrong password or login</div>
+    <?php endif ?>
     <div class="questions">
         <input type="checkbox" class='checkbox'>
         <span class="quest">Remember me</span>

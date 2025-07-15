@@ -1,7 +1,7 @@
 <div class="header">
-    <div class="logo">
+    <a class="logo" href="/index">
         <img src="/img/logo-fox-flatten.svg" alt="FB" height="100 em" />
-    </div>
+    </a>
     <div class="nav">
     <ul class="ul_nav">
         <li><a href="/index">Home</a></li>

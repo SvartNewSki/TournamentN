@@ -12,6 +12,7 @@ class Router {
     }
 
     public function dispatch(string $method, string $url){
+        $url = explode("?", $url)[0];
         if (isset($this->routes[$method][$url])) {
             return $this->callAction($this->routes[$method][$url]);
         }

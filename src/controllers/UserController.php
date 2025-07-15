@@ -47,6 +47,7 @@ class UserController extends WebController
         if ($account->loginUser()) {
             return $this->redirect("/index");
         }
+        return $this->redirect("/auth?error=true");
     }
     public function actionLogout()
     {
