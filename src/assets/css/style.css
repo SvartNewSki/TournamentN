@@ -78,6 +78,8 @@ li {
   flex-direction: row;
   display: flex;
   width: 50vw;
+  align-items: center;
+  justify-content: center;
 }
 .postmain {
   position: relative;
@@ -96,6 +98,42 @@ li {
   width: 40vw;
   height: 100%;
   transition: transform 0.5s ease;
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    min-width: 40vw;
+    width: 40vw;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: -2;
+    }
+    h2 {
+      padding: 1rem 2rem;
+      margin-top: auto;
+      color: #fff;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+  }
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .carousel-images img {
@@ -224,4 +262,8 @@ li {
   width: 90vw;
   text-align: center;
   color: rgb(158, 145, 173);
+}
+.cards.news {
+  width: 65vw;
+  margin-top: 2rem;
 }
