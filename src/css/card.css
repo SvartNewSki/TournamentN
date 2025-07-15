@@ -1,21 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-
 .title_text {
-  display: flex;
-  margin: auto;
-  margin-top: 92px;
-  justify-content: center;
-  font-size: 48px;
-  font-weight: 700;
   margin-bottom: 4rem;
-}
-.title_text span {
-  margin-left: 12px;
 }
 .cards {
   align-self: center;
   display: grid;
-  width: 65vw;
   max-width: 1905px;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2.75rem 4.5rem;
@@ -28,7 +17,7 @@
     display: flex;
     flex-direction: column;
     padding: 1.5rem 1.25rem;
-    aspect-ratio: 305/575;
+    aspect-ratio: 357/195;
     position: relative;
     p {
       margin-top: 0.25rem;
@@ -49,10 +38,9 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 30%;
+    height: 50%;
     width: 100%;
     z-index: -1;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 1.5rem;
   }
 }
