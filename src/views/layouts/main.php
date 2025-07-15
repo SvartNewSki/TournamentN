@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
         
-    <title>Document</title>
+    <title>Tournament</title>
   </head>
   <body>
     <div class="main">
@@ -23,9 +23,6 @@
               <button class="carousel-btn next-btn">&gt;</button>
             
           </div>
-          <div class="timer">
-            <img src="/img/clock.jpg" alt="">
-          </div>
       </div>
       <div class="lower_block">
         <div class="titleRG">RELEASED <span class="games"> GAMES</span></div>
@@ -36,26 +33,13 @@
           repellat.
         </div>
       </div>
-      <div class="tournament_announce">
-        <img src="/img/Mask group.png" alt="" />
-        <div class="tournament_right">
-          <div class="game_title_announce">CALL OF DUTY</div>
-          <div class="tournament_info">
-            <ul class="tournament_table">
-              <li>tournament info: August 8, 2028, 10pm, Los Angeles</li>
-              <li>Register: Until August 6, 2028, 8am</li>
-              <li>
-                Lorem ipsum dolor sit amet: Nulla turpis magna, cursus sit amet
-              </li>
-              <li>Lorem ipsum dolor: magna, cursus sit amet</li>
-              <li>sit amet: cursus sit amet</li>
-            </ul>
-          </div>
-          <img class="button" src="/img/Vector 3.png" alt="" />
-        </div>
-      </div>
+     
     </div>
   <script src="/js/script.js"></script>
   </body>
   
 </html>
+
+
+
+<!-- $this->setCssFile(ASSETS_CSS_PATH . "site-index.css"); -->
