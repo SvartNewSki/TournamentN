@@ -14,13 +14,15 @@
         <p><span class="text_color"> NEWS </span></p>
     </div>
     <div class="cards">
-    <?foreach($news as $id=>$article):?>
-      <a class="card" href="/news/<?= $id?>" >
-        <h2><?=$article['title']?></h2>
-        <p><?=substr($article['description'], 0, 250)?></p>
-        <img src="/assets/img/Frame.jpg" alt="">
-      </a> 
-    <? endforeach?>
+    <?
+    use core\models\BaseView;
+    foreach($news as $key => $article){
+      BaseView::renderSingle('/components/article', [
+        'article' => $article,
+        'id' => $key
+      ]);
+    }
+    ?>
     </div>
     </div>
     </div>
