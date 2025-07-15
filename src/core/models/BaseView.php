@@ -23,4 +23,14 @@ class BaseView
        echo ob_get_clean();
 
     }
+
+    public static function renderSingle(string $layout, array $data = []) {
+        extract($data, EXTR_SKIP);
+        ob_start();
+       
+        $fileLayout = LAYOUT_PATH . $layout . ".php";
+        require $fileLayout;
+       
+        echo ob_get_clean();
+    }
 }
