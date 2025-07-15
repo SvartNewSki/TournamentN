@@ -43,7 +43,6 @@
   width: 14rem;
   height: 3.5rem;
   z-index: -1;
-  border: solid red;
 }
 .button::before {
   content: "1231";
@@ -55,5 +54,4 @@
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 1.5rem;
-  border: solid red;
 }
