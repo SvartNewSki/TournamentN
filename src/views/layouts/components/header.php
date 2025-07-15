@@ -7,13 +7,19 @@
         <li><a href="/index">Home</a></li>
         <li><a href="/Tournaments">Tournaments</a></li>
         <?php
-            if(isset($_COOKIE['login'])) { ?>
-                <li><a href="/user">Кабинет пользователя</a></li>
-                <li><a href="/lib/exit.php">Выйти</a></li>
+use core\models\AppUser;
+
+            if(isset($_COOKIE['identity'])) { ?>
+                <li><a href="/user">Кабинет </a></li>
+                <li><a href="/exit">Выйти</a></li>
                 <?php }
             else{ ?>
-               <li><a href="/auth">Auth</a></li>
+            <?php if (AppUser::isGuest()): ?>
                <li><a href="/register">Register</a></li>
+               <li><a href="/auth">Auth</a></li>
+            <?php else: ?>
+                <li><a href="/user">User</a></li>
+            <?php endif ?>
            <?php }
         ?>
 

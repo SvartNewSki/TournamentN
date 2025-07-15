@@ -18,19 +18,21 @@ class Db{
         }
         return self::$_self;
     }
-
-    public function queryAssociative(string $query, array $params = []): array{
+     public function queryAssociative(string $query, array $params = []): array
+    {
         $conn = $this->conn;
+
         if (!empty($params)) {
             $stmt = $conn->prepare($query);
-            foreach($params as $key => $val){
+            foreach ($params as $key => $val) {
                 $stmt->bindValue($key, $val);
             }
-            $conn = $stmt-> executeQuery($query);
-        } else {
-                $conn = $conn->executeQuery($query);
-            }
-       
+            $conn = $stmt->executeQuery();
+        } else {            
+            $conn = $conn->executeQuery($query);
+        }
+
         return $conn->fetchAllAssociative();
     }
+
 }
