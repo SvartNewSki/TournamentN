@@ -16,16 +16,22 @@ class News extends BaseDbModel{
     }
     
 
-    public static function get(){
+    public static function get($max = null){
         $result = Db::getInstance()
         ->conn
         ->createQueryBuilder()
         ->select('id', 'title', 'description', 'image', 'created_at')
         ->from(self::getTableName())
         ->orderBy('created_at', 'DESC')
+        ->setMaxResults($max)
         ->fetchAllAssociativeIndexed();
         return $result;
     }
+
+    public static function limit($max = null){
+        return static::get($max);
+    }
+
     public static function getNewsInfo($id){
         $article = Db::getInstance()
             ->conn

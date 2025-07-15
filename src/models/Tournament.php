@@ -17,15 +17,20 @@ class Tournament extends BaseDbModel{
     }
     
 
-    public static function get(){
+    public static function get($max = null){
         $result = Db::getInstance()
         ->conn
         ->createQueryBuilder()
         ->select('id', 'title', 'description', 'start_time', 'created_at', 'comments','discipline')
         ->from(self::getTableName())
         ->orderBy('created_at', 'DESC')
+        ->setMaxResults($max)
         ->fetchAllAssociativeIndexed();
         return $result;
+    }
+
+    public static function limit($max = null) {
+        return static::get($max);
     }
      public static function getTourInfo($id){
         $tournament = Db::getInstance()
