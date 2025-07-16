@@ -30,7 +30,7 @@ class BaseModel
         $result = [];
         $fields = get_object_vars($this);
         foreach ($fields as $field => $val) {
-            if ($skip && $this->skipFeild($field)) {
+            if ($skip && ($this->skipFeild($field) || $field === 'id')) {
                 continue;
             }
             if ($this->skipAllow($field) || method_exists($this, $field)) {
